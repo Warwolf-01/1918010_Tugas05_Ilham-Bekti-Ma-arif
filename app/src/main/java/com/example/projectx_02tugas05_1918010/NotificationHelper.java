@@ -44,7 +44,7 @@ public class NotificationHelper extends ContextWrapper {
         return new
                 NotificationCompat.Builder(getApplicationContext(), channelID)
                 .setContentTitle("Alarm!")
-                .setContentText("Bangun Bujang")
+                .setContentText("Oiiiiiiii!!!! Bangun, sudah Malam. ")
                 .setSmallIcon(R.drawable.ic_jam);
     }
 }

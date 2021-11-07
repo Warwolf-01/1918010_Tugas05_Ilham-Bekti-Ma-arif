@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/sch_01"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Alarm"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_buat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_jam"
+        android:drawableTint="@color/white"
+        android:onClick="clickSetAlarm"
+        android:text="Buat Alarm" />
+
+    <Button
+        android:id="@+id/button_batal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_buat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/ic_jam"
+        android:drawableTint="@color/white"
+        android:text="Batalkan Alarm" />
+</LinearLayout>
